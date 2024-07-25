@@ -1,0 +1,33 @@
+.navbar-menu-general .nav-link {
+    color: rgb(0, 0, 0); 
+    font-size: 14px; 
+    fill: rgb(0, 0, 0);
+    
+}
+
+.navbar-menu-general .nav-link:hover {
+    color:  rgba(118, 193, 236, 0.963); 
+    fill: rgba(118, 193, 236, 0.963); 
+}
+
+.svg-menu-general{
+    width:100px; 
+    height:100px;
+    fill: rgb(0, 0, 0);
+    margin: 15px;
+}
+
+.col-md-3.mb-3:hover .svg-menu-general,
+.col-md-3.mb-3:hover .card-estilo {
+    fill: rgba(65, 147, 210, 0.963); 
+    transform: scale(1.05); /* Aumenta el tamaño al 110% */
+    transition: transform 0.3s ease-in-out; /* Agrega una transición suave */
+}
+
+.svg-sub-menu-general{
+    width:15px; 
+    height:15px;
+    fill: rgb(0, 0, 0);
+    align-items: center;
+    margin-right: 10px;
+}

@@ -1,0 +1,128 @@
+body {
+    overflow-x: hidden;
+    background-image: url("../tmp/fondo_3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+:root {
+    
+    --color-nav-titulo: rgb(36, 163, 214);
+    --color-nav-titulo-resaltado: rgb(11, 209, 175);
+
+    --color-nav-titulo-principal:rgb(36, 163, 214);
+    --color-nav-titulo-secundario:rgb(0, 117, 163);
+
+    --color-titulo-normal: rgb(0, 0, 0);
+
+}
+
+.section-padding {
+    padding-top: 10% ;
+}
+
+@media (max-width: 991.98px) {
+    .section-padding {
+        padding-top: 20% ;
+    }
+}
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/*TITULO DEL MENU*/
+/*-----------------------------------------------------------------------------------*/
+
+.titulo{
+    color: var(--color-titulo-normal);
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*CARD STYLE*/
+/*-----------------------------------------------------------------------------------*/
+
+.card-estilo{
+    background-color: rgba(255, 255, 255, 0.393);
+    border: none;
+    backdrop-filter: blur(10px); 
+    height: 100px; 
+    width: 260px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.card-title{
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+    align-items: center; 
+    justify-content: center;/* Add this line to remove hyperlink underline */
+}
+    
+.card-estilo:hover {
+    background-color: rgba(255, 255, 255, 0.936);
+    transform: scale(1.10);
+    opacity: 0.8;
+    
+}
+.card-title:hover{
+    color:  rgb(71, 35, 161);
+}
+
+.card-title:active{
+    color:  rgb(41, 0, 146);;
+}
+
+.card-estilo:active {
+    background-color:  rgba(71, 35, 161, 0.096);
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*BOTTON REGRESAR*/
+/*-----------------------------------------------------------------------------------*/
+
+
+.boton-regresar{
+    background-color: rgba(255, 255, 255, 0.523);
+    backdrop-filter: blur(10px); 
+    height: 100%; 
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 0 auto; /* Add this line to center the element */
+    flex-direction: column; /* Add this line to stack elements vertically */
+}
+
+.boton-regresar {
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 28px;
+    text-decoration: none; /* Add this line to remove hyperlink underline */
+}
+    
+.boton-regresar:hover {
+    background-color: rgba(255, 255, 255, 0.936);
+    transform: scale(1.10);
+    color:rgb(0, 33, 55);
+}
+
+.boton-regresar:active {
+    background-color: rgba(0, 119, 143, 0.8);
+    transform: scale(1.05);
+    opacity: 1;
+}
+

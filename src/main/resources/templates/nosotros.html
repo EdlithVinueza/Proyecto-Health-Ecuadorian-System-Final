@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Visión y Misión - Health Ecuadorian System</title>
+    <!-- Icono de la Pestaña -->
+    <link rel="icon" href="../static/img/Logo.png" th:src="@{/img/Logo.png}">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Estilos de letras -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <!-- Style tmp -->
+    <link rel="stylesheet" href="../static/css/style_index.css" th:href="@{/css/style_index.css}">
+    <style>
+        .section-padding {
+            padding: 60px 0;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .section-content {
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <!-- Logo y Palabras -->
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img class="img-logo" width="60px" src="../static/img/Logo.png" th:src="@{/img/Logo.png}">
+                <div class="d-flex flex-column mx-2">
+                    <span class="titulo-principal">Health Ecuadorian System</span>
+                    <span class="titulo-secundario">Tu Salud, Nuestra Prioridad</span>
+                </div>
+            </a>
+        </div>
+        <!-- Button hambuergesa -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Resto del Menú -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Estilos de las letras del Navbar -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-between align-items-center text-uppercase">
+                <li class="nav-item ">
+                    <a class="nav-link pr-3" th:href="@{/login-usuarios}"><span>Administración</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pr-3" th:href="@{/login-doctores}"><span>Doctores</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pr-3" th:href="@{/login-pacientes}"><span>Pacientes</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pr-3"th:href="@{/nosotros}"><span>Nosotros</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sección de Misión -->
+    <section class="section-padding" id="mision" style="margin-top: 100px;">
+        <div class="container">
+            <h2 class="section-title text-center">Nuestra Misión</h2>
+            <p class="section-content text-center">Health Ecuadorian System brinda un servicio solidario y de alta calidad, enfocado en mejorar la salud y calidad de vida de nuestra comunidad. Nos esforzamos por considerar al paciente como el centro de nuestra atención, apoyándonos en profesionales altamente cualificados para garantizar una experiencia de atención médica excepcional.
+            </p>
+        </div>
+    </section>
+
+    <!-- Sección de Visión -->
+    <section class="section-padding bg-light" id="vision">
+        <div class="container">
+            <h2 class="section-title text-center">Nuestra Visión</h2>
+            <p class="section-content text-center">Ser el líder en la prestación de servicios de salud integral en Ecuador, reconocido por nuestra excelencia, innovación y compromiso con la mejora continua de la atención sanitaria. Aspiramos a ser la primera opción para todos los habitantes de Ecuador que buscan servicios de salud de confianza y calidad.
+            </p>
+        </div>
+    </section>
+
+    <footer class="container-footer">
+        <div class="container-fluid">
+            <div class="row p-3 text-white">
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <h4>Contenido</h4>
+                    <div class="mx-3">
+                        <a th:href="@{/}"class="footer-link">Inicio</a>
+                        <a th:href="@{/nosotros}" class="footer-link">Nosotros</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <h4>Siguenos</h4>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61551436312987" target="_blank" class="social-icon">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/health_system_ec/?fbclid=IwAR0ExqlRxuZmg_x25GIMrI4jN_BJu_yn8E7HFjwQORuFLpDZx9iJgEgwk00" target="_blank" class="social-icon">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- JAVA SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

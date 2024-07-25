@@ -1,0 +1,207 @@
+:root {
+    /*Colores boton enviar*/
+    --enviar-normal:rgba(255, 255, 255, 0.523);
+    --enviar-hover:rgba(255, 255, 255, 0.936);
+    --enviar-activo:rgba(8, 179, 164, 0.637);
+    --enviar-texto-normal:rgb(0, 0, 0);
+    --enviar-texto-hover:rgb(0, 0, 0);
+    --enviar-texto-activo:rgb(0, 0, 0);
+    
+
+    /*Colores boton regresar*/
+    --regresar-normal:rgba(255, 255, 255, 0.523);
+    --regresar-hover:rgba(255, 255, 255, 0.936);
+    --regresar-activo:rgb(3, 62, 255);
+    --regresar-texto-normal: rgb(31, 174, 150);
+    --regresar-texto-hover: rgb(31, 174, 150);
+    --regresar-texto-activo: rgb(31, 174, 150);
+
+    /*Colores boton exito*/
+    --exito-normal:rgba(0, 116, 62, 0.523);
+    --exito-hover:rgba(255, 255, 255, 0.936);
+    --exito-activo:rgb(3, 62, 255);
+    --exito-texto-normal:rgb(0, 0, 0);
+    --exito-texto-hover:rgb(0, 0, 0);
+    --exito-texto-activo:rgb(0, 0, 0);
+
+    /*Colores boton advertencia*/
+    --advertencia-normal:rgba(238, 255, 0, 0.4);
+    --advertencia-hover:rgba(255, 230, 0, 0.7);
+    --advertencia-activo:rgb(248, 248, 0);
+    --advertencia-texto-normal:rgb(0, 0, 0);
+    --advertencia-texto-hover:rgb(0, 0, 0);
+    --advertencia-texto-activo:rgb(0, 0, 0);
+
+    /*Colores boton error*/
+    --error-normal:rgba(203, 3, 3, 0.4);
+    --error-hover:rgba(255, 3, 3, 0.7);
+    --error-activo:rgb(255, 3, 3);
+    --error-texto-normal:rgb(0, 0, 0);
+    --error-texto-hover:rgb(0, 0, 0);
+    --error-texto-activo:rgb(0, 0, 0);
+}
+
+/*----------------------------------------------------------------------------*/
+/*BOTTON ENVIAR*/
+/*-----------------------------------------------------------------------------------*/
+.boton-submit{
+    background-color: var(--enviar-normal);
+    backdrop-filter: blur(10px); 
+    height: 100%; 
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 0 auto; 
+    flex-direction: column; 
+    color:var(--enviar-texto-normal);
+    font-weight: bold;
+    font-size: 28px;
+    border: none; 
+}
+
+@media (max-width: 991.98px) {
+    .boton-submit{
+        font-size: 22px;
+    }
+}
+
+.boton-submit:hover {
+    background-color: var(--enviar-hover);
+    transform: scale(1.10);
+    color:var(--enviar-texto-hover);
+}
+
+.boton-submit:active {
+    background-color: var(--enviar-activo);
+    transform: scale(1.05);
+    opacity: 1;
+    color:var(--enviar-texto-activo);
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*BOTTON REGRESAR*/
+/*-----------------------------------------------------------------------------------*/
+
+.boton-regresar{
+    background-color: var(--regresar-normal);
+    backdrop-filter: blur(10px); 
+    height: 100%; 
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 0 auto; /* Add this line to center the element */
+    flex-direction: column; /* Add this line to stack elements vertically */
+    color:var(--regresar-texto-normal);
+    font-weight: bold;
+    font-size: 28px;
+    border: none; 
+}
+
+@media (max-width: 991.98px) {
+    .boton-regresar{
+        width: 30%;
+        font-size: 22px;
+    }
+}
+
+.boton-regresar:hover {
+    background-color: var(--regresar-hover);
+    transform: scale(1.10);
+    color:var(--regresar-texto-hover);
+}
+
+.boton-regresar:active {
+    background-color: var(--regresar-activo);
+    transform: scale(1.05);
+    color:var(--regresar-texto-activo);
+    opacity: 1;
+}
+
+/*----------------------------------------------------------------------------*/
+/*BOTTON ADVERTENCIA*/
+/*-----------------------------------------------------------------------------------*/
+.boton-advertencia{
+    background-color: var(--advertencia-normal);
+    backdrop-filter: blur(10px); 
+    height: 100%; 
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 0 auto; 
+    flex-direction: column; 
+    color:var(--advertencia-texto-normal);
+    font-weight: bold;
+    font-size: 18px;
+    border: none; 
+}
+
+@media (max-width: 991.98px) {
+    .boton-advertencia{
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+.boton-advertencia:hover {
+    background-color: var(--advertencia-hover);
+    transform: scale(1.03);
+    color:var(--advertencia-texto-hover);
+    border: none; 
+}
+
+.boton-advertencia:active {
+    background-color: var(--advertencia-activo);
+    transform: scale(1.03);
+    opacity: 1;
+    color:var(--advertencia-texto-activo);
+    border: none; 
+}
+
+
+/*----------------------------------------------------------------------------*/
+/*BOTTON ERROR*/
+/*-----------------------------------------------------------------------------------*/
+.boton-error{
+    background-color: var(--error-normal);
+    backdrop-filter: blur(10px); 
+    height: 100%; 
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 0 auto; 
+    flex-direction: column; 
+    color:var(--error-texto-normal);
+    font-weight: bold;
+    font-size: 18px;
+    border: none; 
+}
+
+@media (max-width: 991.98px) {
+    .boton-error{
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+.boton-error:hover {
+    background-color: var(--error-hover);
+    transform: scale(1.03);
+    color:var(--error-texto-hover);
+    border: none; 
+}
+
+.boton-error:active {
+    background-color: var(--error-activo);
+    transform: scale(1.03);
+    opacity: 1;
+    color:var(--error-texto-activo);
+    border: none; 
+}

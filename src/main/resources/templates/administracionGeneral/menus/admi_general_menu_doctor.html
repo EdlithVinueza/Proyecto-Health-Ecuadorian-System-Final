@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    </meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    </meta>
+    <title th:text="${tituloPestaña}"></title>
+    <!--Icono de la Pestaña-->
+    <link rel="icon" href="../../static/img/logo_pestaña.png" th:href="@{../img/logo_pestaña.png}">
+    </link>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    </link>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    </link>
+    <!--Estilos de letras-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=DM+Serif+Display:ital@0;1&display=swap"
+        rel="stylesheet">
+    <!--Iconos-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!--Estilos CSS-->
+    <!--Menu General-->
+    <link rel="stylesheet" href="../../../static/cssGeneral/style_menu.css" th:href="@{/cssGeneral/style_menu.css}">
+    <!--Botones-->
+    <link rel="stylesheet" href="../../../static/cssGeneral/style_botones.css"
+        th:href="@{/cssGeneral/style_botones.css}">
+    <!--Navbar General-->
+    <link rel="stylesheet" href="../../../static/cssGeneral/style_navbar.css" th:href="@{/cssGeneral/style_navbar.css}">
+    <!--SVG General-->
+    <link rel="stylesheet" href="../../../static/cssGeneral/style_svg.css" th:href="@{/cssGeneral/style_svg.css}">
+</head>
+
+<body>
+    <nav th:replace="administracionGeneral/menus/navbar_admi_general :: navbar-admi-general"></nav>
+
+    <div class="container card-center section-padding align-center">
+        <div class="text-center">
+            <h1 class="titulo" th:text="${tituloMenu}"></h1>
+            <br>
+        </div>
+        <div class="row mb-3 align-center justify-content-center text-center">
+            <div class="col-md-3 mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="svg-menu-general" viewBox="0 0 448 512">
+                    <path
+                        d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-96 55.2C54 332.9 0 401.3 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7c0-81-54-149.4-128-171.1V362c27.6 7.1 48 32.2 48 62v40c0 8.8-7.2 16-16 16H336c-8.8 0-16-7.2-16-16s7.2-16 16-16V424c0-17.7-14.3-32-32-32s-32 14.3-32 32v24c8.8 0 16 7.2 16 16s-7.2 16-16 16H256c-8.8 0-16-7.2-16-16V424c0-29.8 20.4-54.9 48-62V304.9c-6-.6-12.1-.9-18.3-.9H178.3c-6.2 0-12.3 .3-18.3 .9v65.4c23.1 6.9 40 28.3 40 53.7c0 30.9-25.1 56-56 56s-56-25.1-56-56c0-25.4 16.9-46.8 40-53.7V311.2zM144 448a24 24 0 1 0 0-48 24 24 0 1 0 0 48z" />
+                </svg>
+                <a th:href="@{/administracion-general/doctor-nuevo}" class="card-estilo">
+                    <div>
+                        <h5 class="card-title">Crear Doctor</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3  mb-3">
+                <svg class="svg-menu-general" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 1010 1010"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                        d="M905.2 812.6c-6.600000000000023-6.600000000000023-7.5-18-2.7000000000000455-26 20.299999999999955-33.60000000000002 32.10000000000002-72.80000000000007 32.10000000000002-114.89999999999998 0-123.20000000000005-100.20000000000005-223.40000000000003-223.39999999999998-223.40000000000003s-223.40000000000003 100.19999999999999-223.40000000000003 223.40000000000003 100.19999999999999 223.39999999999998 223.40000000000003 223.39999999999998c45.39999999999998 0 87.59999999999991-13.800000000000068 122.89999999999998-37.200000000000045 7.7999999999999545-5.100000000000023 19-4.5 25.600000000000023 2.1000000000000227l74.69999999999993 74.70000000000005c0.5 0.5 1.1000000000000227 1 1.7000000000000455 1.5 0.8999999999999773 0.7999999999999545 6.899999999999977 6.5 13.199999999999932 12.799999999999955s16.90000000000009 6.2000000000000455 23.40000000000009-0.39999999999997726l22.299999999999955-22.300000000000068c6.600000000000023-6.599999999999909 6.600000000000023-17.299999999999955 0-23.899999999999977l-89.79999999999995-89.79999999999995z m-58.80000000000007-36.80000000000007c-7.399999999999977 9.5-15.600000000000023 18.300000000000068-24.799999999999955 26.100000000000023-29.800000000000068 25.300000000000068-68.30000000000007 40.60000000000002-110.30000000000007 40.60000000000002-94.19999999999993 0-170.79999999999995-76.60000000000002-170.79999999999995-170.79999999999995s76.60000000000002-170.80000000000007 170.79999999999995-170.80000000000007c94.20000000000005 0 170.80000000000007 76.60000000000002 170.80000000000007 170.80000000000007 0 39.19999999999993-13.399999999999977 75.29999999999995-35.700000000000045 104.09999999999991z m-469.59999999999997-280.29999999999995c123.80000000000001 0 224.49999999999994-100.69999999999999 224.49999999999994-224.5 0-123.9-100.69999999999993-224.6-224.49999999999994-224.6s-224.5 100.69999999999999-224.5 224.49999999999997 100.69999999999999 224.60000000000002 224.5 224.60000000000002z m93.09999999999997 43c4.600000000000023-8.100000000000023 1.8000000000000114-11.200000000000045-6.899999999999977-8-27.19999999999999 10.200000000000045-56.30000000000001 15.5-86.19999999999999 15.5-68 0-131.60000000000002-27.299999999999955-178.8-76.89999999999998l-2.8000000000000114-2.900000000000034s-4.399999999999977-2.099999999999966-6.399999999999977-0.8999999999999773l-3.5 2c-99.9 57.900000000000034-165.60000000000002 158.7-185 284.40000000000003l-0.30000000000001137 2.2999999999999545s0.4 3.1000000000000227 1.1 4.2000000000000455l1.4 1.8999999999999773c99.9 119.60000000000002 232.8 185.5 374.2 185.5 59.60000000000002 0 117.69999999999999-11.700000000000045 172.3-34.10000000000002 8.600000000000023-3.5 9-10.700000000000045 1.3999999999999773-16-69.89999999999998-49.700000000000045-115.39999999999998-131.10000000000002-115.39999999999998-223.20000000000005 0.10000000000002274-48.799999999999955 12.699999999999989-94.29999999999995 34.89999999999998-133.79999999999995z" />
+                </svg>
+                <a th:href="@{/administracion-general/doctor-ver-todo}" class="card-estilo">
+                    <div>
+                        <h5 class="card-title">Gestionar Doctor</h5>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3  mb-3">
+                <svg class="svg-menu-general" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                    width="24px" fill="#e8eaed">
+                    <path
+                        d="M160-200v-440 440-15 15Zm0 80q-33 0-56.5-23.5T80-200v-440q0-33 23.5-56.5T160-720h160v-80q0-33 23.5-56.5T400-880h160q33 0 56.5 23.5T640-800v80h160q33 0 56.5 23.5T880-640v171q-18-13-38-22.5T800-508v-132H160v440h283q3 21 9 41t15 39H160Zm240-600h160v-80H400v80ZM720-40q-83 0-141.5-58.5T520-240q0-83 58.5-141.5T720-440q83 0 141.5 58.5T920-240q0 83-58.5 141.5T720-40Zm20-208v-112h-40v128l86 86 28-28-74-74Z" />
+                </svg>
+                <a th:href="@{/administracion-general/horario-ver-todo}" class="card-estilo">
+                    <div>
+                        <h5 class="card-title">Horarios Doctores</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container-mensaje text-center">
+        <div th:if="${msgExito}" class="mensaje-exito" role="alert">
+            <p th:text="${msgExito}"></p>
+        </div>
+        <div th:if="${msgError}" class="mensaje-error" role="alert">
+            <p th:text="${msgError}"></p>
+        </div>
+    </div>
+
+    <div class="fixed-bottom text-end me-3 mb-3 ">
+        <a th:href="@{${returnUrl}}" class="boton-regresar btn" role="button">Regresar</a>
+    </div>
+
+    <!--JAVA SCRIPT-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>

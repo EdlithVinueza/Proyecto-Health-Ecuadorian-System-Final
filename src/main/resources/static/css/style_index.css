@@ -1,0 +1,181 @@
+body {
+    overflow-x: hidden;
+    background-color: #ffffff;
+}
+
+#navbar-iframe-container {
+    display: none;
+}
+
+:root {
+
+    --color-logo-verde:rgb(11, 209, 175);
+    --color-logo-azul:rgb(36, 163, 214);
+    
+    --color-nav-titulo-principal:rgb(36, 163, 214);
+    --color-nav-titulo-secundario:rgb(0, 117, 163);
+
+    --color-nav-letra-normal: rgb(36, 163, 214);
+    --color-nav-letra-resaltada: rgb(34, 180, 199);
+
+    --color-carusel-imagenes:rgba(160, 230, 251, 0.185);
+
+    --color-footer-letras-iconos:rgb(255, 255, 255);
+    --color-footer-letras-iconos-evento:rgb(255, 255, 255);
+}
+
+.titulo-principal {
+    font-size: 18px;
+    color: var(--color-nav-titulo-principal);
+    text-align: right;
+}
+
+.titulo-secundario {
+    font-size: 14px;
+    color: var(--color-nav-titulo-secundario);
+    text-align: right;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*NAVBAR*/
+/*-----------------------------------------------------------------------------------*/
+
+.navbar-light {
+    background: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0), rgba(255, 255, 255, 3), rgba(255, 255, 255, 0.6), rgb(255, 255, 255));
+    backdrop-filter: blur(10px);
+    background-size: cover;
+    background-position: center 20%;
+}
+
+.navbar-nav a.nav-link {
+    color: var(--color-nav-letra-normal);
+
+    transition: all 0.3s;
+}
+
+.navbar-nav a.nav-link:hover {
+    color: var(--color-nav-letra-resaltada);
+    font-size: 1.1em;
+    text-decoration: underline;
+    text-shadow: 2px 2px 4px rgba(202, 244, 255, 0.785);
+}
+
+@media (max-width: 991.98px) {
+    .navbar-light {
+        background: linear-gradient(to right, rgba(255, 255, 255, 0.827), rgba(255, 255, 255, 0.527), rgba(255, 255, 255, 0.229), rgba(255, 255, 255, 0.527), rgba(255, 255, 255, 0.827));
+    }
+}
+
+.nav-link span {
+    font-weight: bold;
+}
+
+.navbar-brand span {
+    font-family: "Libre Franklin", sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*Carusel*/
+/*-----------------------------------------------------------------------------------*/
+
+.section-padding {
+    padding-top: 70px ;
+}
+
+.carousel-item {
+    height: 89vh;
+    min-height: 300px;
+}
+
+@media (max-width: 991.98px) {
+
+    .section-padding {
+        padding-top: 110px ;
+    }
+    .carousel-item {
+        height: 50vh;
+    }
+}
+
+
+.carousel-caption-personal {
+    bottom: 200px;
+    z-index: 2;
+}
+
+.carousel-caption h5 {
+    top: 200px;
+    font-size: 45px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.carousel-caption p {
+    font-size: 18px;
+    width: 60%;
+    margin: auto;
+    line-height: 1.9;
+}
+
+.carousel-inner::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--color-carusel-imagenes);
+    z-index: 1;
+
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*FOOTER*/
+/*-----------------------------------------------------------------------------------*/
+
+.container-footer {
+    background: linear-gradient(var(--color-logo-verde), var(--color-logo-azul))
+}
+
+.footer-link {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+    margin-right: 5px;
+    padding: 5px;
+    text-decoration: underline;
+}
+
+.social-icons {
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icon {
+    color: var(--color-footer-letras-iconos);
+    text-decoration: none;
+}
+
+.social-icon i {
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+    color: var(--color-footer-letras-iconos);
+    transition: background-color 0.3s ease;
+}
+
+.social-icon:hover i {
+    transform: scale(1.5);
+    transition: transform 0.3s ease;
+    color: var(--color-footer-letras-iconos-evento);
+}

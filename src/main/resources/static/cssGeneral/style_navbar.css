@@ -1,0 +1,71 @@
+
+:root {
+    
+    --color-nav-titulo: rgb(36, 163, 214);
+    --color-nav-titulo-resaltado: rgb(11, 209, 175);
+
+    --color-nav-titulo-principal:rgb(36, 163, 214);
+    --color-nav-titulo-secundario:rgb(0, 117, 163);
+
+    --color-titulo-normal: rgb(0, 0, 0);
+
+}
+
+.section-padding {
+    padding-top: 10% ;
+}
+
+@media (max-width: 991.98px) {
+    .section-padding {
+        padding-top: 20% ;
+    }
+}
+
+.navbar {
+    height: 75px; /* Ajusta esto según sea necesario */
+    padding: 5px 10px; /* Reduce el padding para disminuir la grosura */
+    /* Añade o ajusta otras propiedades según sea necesario */
+}
+/*-----------------------------------------------------------------------------------*/
+/*NAVBAR*/
+/*-----------------------------------------------------------------------------------*/
+.titulo-principal {
+    font-size: 18px;
+    color: var(--color-nav-titulo-principal);
+    text-align: right;
+}
+
+.titulo-secundario {
+    font-size: 14px;
+    color: var(--color-nav-titulo-secundario);
+    text-align: right;
+}
+
+.navbar-light {
+    background: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(10px);
+    background-size: cover;
+    background-position: center 20%;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-light {
+        background: linear-gradient(to right, rgba(255, 255, 255, 0.827), rgba(255, 255, 255, 0.527), rgba(255, 255, 255, 0.229), rgba(255, 255, 255, 0.527), rgba(255, 255, 255, 0.827));
+    }
+}
+
+.navbar-brand span {
+    font-family: "Libre Franklin", sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.dropdown-menu {
+    background-color: rgba(255, 255, 255, 0.393);
+    backdrop-filter: blur(10px); 
+    border:rgb(0, 33, 55);
+}
+
+.dropdown-item:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,78 @@
+:root {
+    /*Colores boton exito*/
+    --exito:rgba(0, 116, 62, 0.523);
+ 
+    /*Colores boton advertencia*/
+    --advertencia:rgba(255, 187, 0, 0.4);
+ 
+    /*Colores boton error*/
+    --error:rgb(255, 0, 0);
+
+    --exito-principal:white;
+}
+
+
+/* Estilo para el contenedor padre */
+.contenedor-padre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Esto hace que el contenedor ocupe toda la altura de la ventana */
+}
+
+/* Estilo para .mensaje-exito-principal */
+.mensaje-exito-principal {
+    color: var(--exito-principal);
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+}
+
+/*----------------------------------------------------------------------------*/
+/*Mensaje Exito*/
+/*-----------------------------------------------------------------------------------*/
+.mensaje-exito{
+    color:var(--exito);
+    font-weight: bold;
+    font-size: 18px;
+    border: none; 
+}
+
+
+@media (max-width: 991.98px) {
+    .mensaje-exito{
+        font-size: 22px;
+    }
+}
+
+/*----------------------------------------------------------------------------*/
+/*BOTTON ERROR*/
+/*-----------------------------------------------------------------------------------*/
+.mensaje-error{
+    color:var(--error);
+    font-weight: bold;
+    font-size: 18px;
+    border: none; 
+}
+
+@media (max-width: 991.98px) {
+    .mensaje-error{
+        font-size: 16px;
+    }
+}
+
+/*----------------------------------------------------------------------------*/
+/*BOTTON ADVERTENCIA*/
+/*-----------------------------------------------------------------------------------*/
+.mensaje-advertencia{
+    color:var(--advertencia);
+    font-weight: bold;
+    font-size: 18px;
+    border: none; 
+}
+
+@media (max-width: 991.98px) {
+    .mensaje-advertencia{
+        font-size: 16px;
+    }
+}
